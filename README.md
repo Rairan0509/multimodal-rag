@@ -1,4 +1,4 @@
-git clone <저장소 주소>
+git clone [<저장소 주소>]https://github.com/Rairan0509/multimodal-rag
 cd multimodal-rag
 
 # 가상환경 생성 및 활성화
