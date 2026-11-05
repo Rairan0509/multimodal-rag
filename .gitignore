@@ -8,7 +8,7 @@
 data/figures/
 data/project
 *.pdf
-
+invest/figures
 # 벡터 DB
 chroma_db/
 
@@ -21,3 +21,7 @@ __pycache__
 .vscode
 .idea
 .DS_Store
+
+# pkl 파일
+data/processed
+*.pkl
