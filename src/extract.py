@@ -1,6 +1,5 @@
 import os
 
-from langchain_text_splitters import CharacterTextSplitter
 from unstructured.partition.pdf import partition_pdf
 
 
@@ -38,19 +37,3 @@ def categorize_elements(raw_pdf_elements):
     return texts, tables
 
 
-# 현재 작업 디렉터리 경로 반환
-current_directory = os.getcwd()
-
-# fname: 처리할 PDF 파일 이름 / fpath: PDF가 저장된 폴더 경로
-fname = "assignment.pdf"
-fpath = os.path.join(os.path.dirname(current_directory), "data/")
-
-raw_pdf_elements = extract_pdf_elements(fpath, fname)
-texts, tables = categorize_elements(raw_pdf_elements)
-
-text_splitter = CharacterTextSplitter.from_tiktoken_encoder(
-    chunk_size=1000, chunk_overlap=100
-)
-
-joined_texts = " ".join(texts)
-texts_2k_token = text_splitter.split_text(joined_texts)
