@@ -1,5 +1,5 @@
+# git 클론
 git clone [<저장소 주소>]https://github.com/Rairan0509/multimodal-rag
-cd multimodal-rag
 
 # 가상환경 생성 및 활성화
 python -m venv .venv
@@ -28,6 +28,7 @@ cp .env.example .env                # 윈도우: copy .env.example .env
   - 도넛차트 7개: 미국·유럽·내수의 차급별/친환경차 판매 비중 6개 + 전체 차급별 판매 비중 1개
   - 워터폴 차트 2개: 매출액·영업이익 증감 요인 분석
   - 막대그래프 4개: 매출원가, 판매관리비, 영업외 손익, 당기순이익
+- 데이터 출처: [현대자동차 2025년 3분기 경영실적 발표 (IRGO)](https://m.irgo.co.kr/IR%EC%9E%90%EB%A3%8C/70802/TB/%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8-2025%EB%85%84-3%EB%B6%84%EA%B8%B0-%EA%B2%BD%EC%98%81%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C)
 
 ### 1-2. 왜 텍스트는 RAG로는 부족한가
 IR 자료는 핵심 정보 대부분이 표와 그래프에 있고, 본문은 짧은 요약 문구에 그친다.
